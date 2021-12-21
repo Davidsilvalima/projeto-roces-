@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="roces.css" />
+    <title>Roces Agressive In Line</title>
+  </head>
+  <body>
+    <section class="sec">
+      <header>
+        <a href="#"><img src="/imagens/logo.jpg" class="logo" /></a>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Produtos</a></li>
+          <li><a href="#">Novidades</a></li>
+          <li><a href="#">Notícias</a></li>
+          <li><a href="#">Contatos</a></li>
+        </ul>
+      </header>
+      <div class="content">
+        <div class="textBox">
+          <h2>Às vezes<br /><span>nem é só esporte</span></h2>
+          <p>
+            O inline skate M12 UFS possui uma fivela Memory em alumínio e
+            atacadores que tornam o fecho fácil, rápido e preciso. O quadro UFS
+            em Náilon reforçado com Fibra de Vidro é capaz de hospedar 2 rebolos
+            de 58mm + 2 rebolos centrais
+          </p>
+          <a href="#">Ver todos</a>
+        </div>
+      </div>
+      <div class="imgBox">
+        <img src="/imagens/rosasc.png" class="roces" />
+      </div>
+      <ul class="thumb">
+      <li><img src="/imagens/citrusc.jpg" onclick="imgSlider('/imagens/citrusc.jpg');changeBgColor('#2E8B57')"></li>
+        <li><img src="/imagens/avelac.jpg" onclick="imgSlider('/imagens/avelac.jpg');changeBgColor('#660033')"></li>
+        <li><img src="/imagens/rosasc.png" onclick="imgSlider('/imagens/rosasc.png');changeBgColor('#DA70D6')"></li>
+      </ul>
+      <ul class="sci">
+        <li><a href="#"><img src="/imagens/facebook.png"></a></li>
+        <li><a href="#"><img src="/imagens/instagram.png"></a></li>
+        <li><a href="#"><img src="/imagens/twitter.png"></a></li>
+      </ul>
+    </section>
+    <script type="text/javascript">
+      function imgSlider(anything){
+        document.querySelector('.roces').src = anything;
+      }
+      function changeBgColor(color){
+        const sec = document.querySelector('.sec')
+        sec.style.background = color;
+      }
+    </script>
+  </body>
+</html>
